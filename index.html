@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+		<META HTTP-EQUIV="refresh" CONTENT="120">
 
 		<title>Smiley Om Message Board</title>
 
@@ -31,6 +32,19 @@
 			}
 		</script>
 
+		<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+		<script type="text/javascript">
+		    var feed = new Instafeed({
+		    	  get: 'tagged',
+					  tagName: 'SmileyOm',
+		        clientId: '4c0caa35855143e788ca790012daaa3b',
+		        limit: 4,
+		        resolution: 'low_resolution'
+		    });
+		    feed.run();
+		</script>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -49,17 +63,17 @@
 					<img src='images/instagram.png'> <img src='images/twitter.png'> <img src='images/facebook.png'> <img src='images/pinterest.png'> <img src='images/youtube.png'> <img src='images/vimeo.png'>
 				</section>
 
-				<section data-autoslide="5000">
+				<section data-autoslide="3000">
 					<h2><b>We accept claps</b></h2>
 					<img src='images/clapping.gif'>
 				</section>
 
-				<section data-autoslide="5000">
+				<section data-autoslide="3000">
 					<h2><b>We accept coins</b></h2>
 					<img src='images/dogecoins.jpg'>
 				</section>
 
-				<section data-autoslide="5000">
+				<section data-autoslide="7000">
 					<h2><b>And we accept cards</b></h2>
 					<img src='images/shopify-mobile-payments.png'>
 				</section>
@@ -73,6 +87,12 @@
 					<h1><b>try it</b></h1>
 					<h4><b>AcroyogaOttawa.com</b></h4>
 					<h4><b>SmileyOm.com</b></h4>
+				</section>
+
+				<section>
+					<h1>Instagram</h1>
+					<h3>Tag #SmileyOm</h3>
+					<div id="instafeed"></div>
 				</section>
 
 			</div>
